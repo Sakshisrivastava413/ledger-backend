@@ -33,7 +33,7 @@ Each financial Transaction affects at least two Accounts via Entries, ensuring t
 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/Sakshisrivastava413/ledger-backend.git
 cd ledger-backend
 ```
 
@@ -49,12 +49,15 @@ npm install
   type: 'postgres',
   host: 'localhost',
   port: 5432,
-  username: 'your-db-username',
-  password: 'your-db-password',
-  database: 'ledger_db',
+  username: 'your-db-username', // change this
+  password: 'your-db-password', // change this
+  database: 'ledger_db', // change this
   entities: [__dirname + '/**/*.entity{.ts,.js}'],
   synchronize: true,
 });
 ```
 
 Create DB and start the server
+
+Create accounts as well
+
